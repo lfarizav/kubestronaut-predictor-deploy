@@ -19,14 +19,14 @@ streamlit:
   # Overrides the image tag whose default is the chart appVersion.
   tag: "d8c721f" # {"$imagepolicy": "kubestronaut_predictor:kubestronaut_predictor-policy:tag"}
 
-service_fastapi:
+servicefastapi:
   # This sets the service type more information can be found here: https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types
   type: ClusterIP
   # This sets the ports more information can be found here: https://kubernetes.io/docs/concepts/services-networking/service/#field-spec-ports
   port: 8000
   targetPort: 8000
   nodePort: 30100
-service_streamlit:
+servicestreamlit:
   # This sets the service type more information can be found here: https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types
   type: NodePort
   # This sets the ports more information can be found here: https://kubernetes.io/docs/concepts/services-networking/service/#field-spec-ports
