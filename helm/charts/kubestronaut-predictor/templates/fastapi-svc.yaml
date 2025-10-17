@@ -8,7 +8,7 @@ spec:
   ports:
   - name: "8000"
     nodePort: {{ .Values.servicefastapi.nodePort }}
-    port: {{ .Values.service_fastapi.port }}
+    port: {{ .Values.servicefastapi.port }}
     protocol: TCP
     targetPort: {{ .Values.servicefastapi.targetPort }}
   selector:
