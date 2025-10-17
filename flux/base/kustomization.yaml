@@ -3,7 +3,7 @@ kind: Kustomization
 resources:
 - helm-kubestronaut-predictor-all-imageupdateautomation.yaml
 - helm-kubestronaut-predictor-helmrelease.yaml
-- helm-kkubestronaut-predictor-imagepolicy.yaml
+- helm-kubestronaut-predictor-imagepolicy.yaml
 - helm-kubestronaut-predictor-imagerepository.yaml
 - kubestronaut-predictor-alert.yaml
 - kubestronaut-predictor-gitrepository.yaml
