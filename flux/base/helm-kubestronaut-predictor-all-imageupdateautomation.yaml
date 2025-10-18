@@ -15,8 +15,8 @@ spec:
         name: fluxcdbot
 #      messageTemplate: '{{range .Updated.Images}}{{println .}}{{end}}'
       messageTemplate: |
-        Automated image update:
-        {{range .Changed.Images}}{{println .}}{{end}}
+        Image update:
+        {{ range .Changes }}- {{ .ImageRef }} -> {{ .NewTag }}{{ end }}
     push:
       branch: main
   interval: 1m0s
