@@ -12,14 +12,14 @@ fastapi:
   # This sets the pull policy for images.
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "latest" # {"$imagepolicy": "kubestronaut_predictor:kubestronaut_predictor-policy:tag"}
+  tag: "latest" # {"$imagepolicy": "kubestronaut-predictor:kubestronautfastapi-policy:tag"}
 streamlit:
   repository: lfarizav/kubestronautstreamlit
   replicaCount: 1
   # This sets the pull policy for images.
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "latest" # {"$imagepolicy": "kubestronaut_predictor:kubestronaut_predictor-policy:tag"}
+  tag: "latest" # {"$imagepolicy": "kubestronaut-predictor:kubestronautstreamlit-policy:tag"}
 
 servicefastapi:
   # This sets the service type more information can be found here: https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types
