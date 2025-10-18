@@ -14,7 +14,7 @@ spec:
         email: fluxcdbot@users.noreply.github.com
         name: fluxcdbot
 #      messageTemplate: '{{range .Updated.Images}}{{println .}}{{end}}'
-      messageTemplate: "Image update: {{ range .Changed.Images -}}{{ .Repository }}:{{ .Tag }} {{ end }}"
+      messageTemplate: '{{range .Updated.Images}}{{println .}}{{end}}'
     push:
       branch: main
   interval: 1m0s
