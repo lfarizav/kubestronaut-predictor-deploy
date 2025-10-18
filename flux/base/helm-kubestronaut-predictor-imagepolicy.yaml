@@ -7,8 +7,8 @@ metadata:
 spec:
 #  digestReflectionPolicy: Never
   filterTags:
-#    extract: $ts
-    pattern: '^[a-zA-Z0-9._-]+$'
+    extract: $ts
+    pattern: '^(?P<ts>[0-9]{14})-[a-f0-9]{7}$'
   imageRepositoryRef:
     name: kubestronautfastapi-image
   policy:
@@ -23,8 +23,8 @@ metadata:
 spec:
 #  digestReflectionPolicy: Never
   filterTags:
-#    extract: $ts
-    pattern: '^[a-zA-Z0-9._-]+$'
+    extract: $ts
+    pattern: '^(?P<ts>[0-9]{14})-[a-f0-9]{7}$'
   imageRepositoryRef:
     name: kubestronautstreamlit-image
   policy:
