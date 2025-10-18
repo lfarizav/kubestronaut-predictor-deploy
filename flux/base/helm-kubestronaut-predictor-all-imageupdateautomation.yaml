@@ -16,10 +16,10 @@ spec:
 #      messageTemplate: '{{range .Updated.Images}}{{println .}}{{end}}'
       messageTemplate: |
         Image update by Flux:
-        {{- range $file, $items := .Changed }}
-          File: {{$file}}
-          {{- range $path, $change := $items }}
-            • {{$path}} updated from {{$change.OldTag}} → {{$change.NewTag}}
+        {{- range $filename, $changes := .Changed }}
+          File: {{$filename}}
+          {{- range $changes }}
+            • Updated {{ .Path }} from {{ .OldValue }} → {{ .NewValue }}
           {{- end }}
         {{- end }}
     push:
