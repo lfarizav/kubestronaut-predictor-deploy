@@ -10,3 +10,5 @@ spec:
   image: lfarizav/kubestronaut-predictor
   interval: 1m0s
   provider: generic
+  secretRef:
+    name: dockerhub-creds
