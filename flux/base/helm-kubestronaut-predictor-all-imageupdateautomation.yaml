@@ -16,7 +16,7 @@ spec:
 #      messageTemplate: '{{range .Updated.Images}}{{println .}}{{end}}'
       messageTemplate: |
         Image update:
-        {{ range .Changes }}- {{ .ImageRef }} -> {{ .NewTag }}{{ end }}
+        {{ range .Updated.Images }}- {{ .Name }} -> {{ .NewTag }}{{ end }}
     push:
       branch: main
   interval: 1m0s
