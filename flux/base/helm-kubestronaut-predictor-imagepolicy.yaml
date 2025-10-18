@@ -5,10 +5,10 @@ metadata:
   name: kubestronautfastapi-policy
   namespace: kubestronaut-predictor
 spec:
-  digestReflectionPolicy: Never
-  filterTags:
-    extract: $ts
-    pattern: ^[a-f0-9]+-(?P<ts>[0-9]+)
+#  digestReflectionPolicy: Never
+#  filterTags:
+#    extract: $ts
+#    pattern: ^[a-f0-9]+-(?P<ts>[0-9]+)
   imageRepositoryRef:
     name: kubestronautfastapi-image
   policy:
@@ -21,10 +21,10 @@ metadata:
   name: kubestronautstreamlit-policy
   namespace: kubestronaut-predictor
 spec:
-  digestReflectionPolicy: Never
-  filterTags:
-    extract: $ts
-    pattern: ^[a-f0-9]+-(?P<ts>[0-9]+)
+#  digestReflectionPolicy: Never
+#  filterTags:
+#    extract: $ts
+#    pattern: ^[a-f0-9]+-(?P<ts>[0-9]+)
   imageRepositoryRef:
     name: kubestronautstreamlit-image
   policy:
