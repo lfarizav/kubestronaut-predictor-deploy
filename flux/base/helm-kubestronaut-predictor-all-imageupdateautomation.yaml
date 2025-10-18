@@ -14,7 +14,14 @@ spec:
         email: fluxcdbot@users.noreply.github.com
         name: fluxcdbot
 #      messageTemplate: '{{range .Updated.Images}}{{println .}}{{end}}'
-      messageTemplate:  "Image update: {{ range $k, $v := .Changed }}{{$k}} updated to tag {{$v.NewTag}} {{ end }}"
+      messageTemplate: |
+        Image update by Flux:
+        {{- range $file, $items := .Changed }}
+          File: {{$file}}
+          {{- range $path, $change := $items }}
+            • {{$path}} updated from {{$change.OldTag}} → {{$change.NewTag}}
+          {{- end }}
+        {{- end }}
     push:
       branch: main
   interval: 1m0s
