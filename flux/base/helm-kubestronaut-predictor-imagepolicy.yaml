@@ -12,8 +12,8 @@ spec:
   imageRepositoryRef:
     name: kubestronautfastapi-image
   policy:
-    alphabetical:
-      order: asc
+    semver:
+      range: '*'
 ---
 apiVersion: image.toolkit.fluxcd.io/v1beta2
 kind: ImagePolicy
@@ -28,5 +28,5 @@ spec:
   imageRepositoryRef:
     name: kubestronautstreamlit-image
   policy:
-    alphabetical:
-      order: asc
+    semver:
+      range: '*'
