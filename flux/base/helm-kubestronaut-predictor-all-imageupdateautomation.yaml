@@ -1,5 +1,5 @@
 ---
-apiVersion: image.toolkit.fluxcd.io/v1beta2
+apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImageUpdateAutomation
 metadata:
   name: kubestronaut-predictor-all
@@ -14,14 +14,7 @@ spec:
         email: fluxcdbot@users.noreply.github.com
         name: fluxcdbot
 #      messageTemplate: '{{range .Updated.Images}}{{println .}}{{end}}'
-      messageTemplate: |
-        Image update by Flux:
-        {{- range $filename, $changes := .Changed }}
-          File: {{$filename}}
-          {{- range $changes }}
-            • Updated {{ .Path }} from {{ .OldValue }} → {{ .NewValue }}
-          {{- end }}
-        {{- end }}
+      messageTemplate: '{{range .Updated.Images}}{{println .}}{{end}}'
     push:
       branch: main
   interval: 1m0s
