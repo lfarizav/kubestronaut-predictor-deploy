@@ -5,11 +5,11 @@ metadata:
   name: kubestronautfastapi-image
   namespace: kubestronaut-predictor
 spec:
-  exclusionList:
-  - ^.*\.sig$
+#  exclusionList:
+#  - ^.*\.sig$
   image: lfarizav/kubestronautfastapi
   interval: 1m0s
-  provider: generic
+#  provider: generic
   secretRef:
     name: dockerhub-credentials
 
@@ -20,11 +20,11 @@ metadata:
   name: kubestronautstreamlit-image
   namespace: kubestronaut-predictor
 spec:
-  exclusionList:
-  - ^.*\.sig$
+#  exclusionList:
+#  - ^.*\.sig$
   image: lfarizav/kubestronautstreamlit
   interval: 1m0s
-  provider: generic
+#  provider: generic
   secretRef:
     name: dockerhub-credentials
 
