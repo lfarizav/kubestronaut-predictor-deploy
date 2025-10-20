@@ -18,7 +18,7 @@ streamlit:
   # This sets the pull policy for images.
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "20251020194254-3fcd6f3" # {"$imagepolicy": "kubestronaut-predictor:kubestronautstreamlit-policy:tag"}
+  tag: "20251020231321-3fcd6f3" # {"$imagepolicy": "kubestronaut-predictor:kubestronautstreamlit-policy:tag"}
 servicefastapi:
   # This sets the service type more information can be found here: https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types
   type: ClusterIP
