@@ -11,7 +11,7 @@ fastapi:
   # This sets the pull policy for images.
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "20251020194838-3fcd6f3" # {"$imagepolicy": "kubestronaut-predictor:kubestronautfastapi-policy:tag"}
+  tag: "20251020231842-3fcd6f3" # {"$imagepolicy": "kubestronaut-predictor:kubestronautfastapi-policy:tag"}
 streamlit:
   repository: lfarizav/kubestronautstreamlit
   replicaCount: 1
