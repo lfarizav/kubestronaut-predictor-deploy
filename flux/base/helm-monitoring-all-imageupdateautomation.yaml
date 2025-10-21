@@ -22,5 +22,5 @@ spec:
     kind: GitRepository
     name: monitoring-deploy
   update:
-    path: ./helm/charts/kubestronaut-predictor
+    path: ./helm/charts/kube-prometheus-stack
     strategy: Setters
