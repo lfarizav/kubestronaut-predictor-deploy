@@ -1,7 +1,7 @@
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
-  name: k8s
+  name: monitoring
   namespace: monitoring
 spec:
   chart:
@@ -10,6 +10,6 @@ spec:
       reconcileStrategy: ChartVersion
       sourceRef:
         kind: GitRepository
-        name: kubestronaut-predictor-deploy
+        name: monitoring-deploy
       version: '*'
   interval: 10m0s
