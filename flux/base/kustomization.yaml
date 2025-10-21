@@ -5,6 +5,8 @@ resources:
 - helm-kubestronaut-predictor-helmrelease.yaml
 - helm-kubestronaut-predictor-imagepolicy.yaml
 - helm-kubestronaut-predictor-imagerepository.yaml
+- helm-monitoring-all-imageupdateautomation.yaml
+- helm-monitoring-helmrelease.yaml
 - kubestronaut-predictor-alert.yaml
 - kubestronaut-predictor-gitrepository.yaml
 - slack-notif-alert.yaml

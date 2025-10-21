@@ -20,7 +20,7 @@ spec:
   interval: 1m0s
   sourceRef:
     kind: GitRepository
-    name: kubestronaut-predictor-deploy
+    name: monitoring-deploy
   update:
     path: ./helm/charts/kube-prometheus-stack
     strategy: Setters
