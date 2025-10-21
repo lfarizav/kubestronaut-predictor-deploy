@@ -11,6 +11,9 @@ spec:
     port: {{ .Values.servicefastapi.port }}
     protocol: TCP
     targetPort: {{ .Values.servicefastapi.targetPort }}
+  - name: metrics
+    port: 9100
+    targetPort: 9100
   selector:
     app: kubestronautfastapi
   type: NodePort
