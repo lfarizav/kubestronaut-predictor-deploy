@@ -3564,7 +3564,6 @@ prometheus:
   ## Configuration for Prometheus service
   ##
   service:
-    enabled: true
     #annotations: {}
     #labels: {}
     #clusterIP: ""
@@ -3572,6 +3571,7 @@ prometheus:
     #  enabled: false
     #  ipFamilies: ["IPv6", "IPv4"]
     #  ipFamilyPolicy: "PreferDualStack"
+    #enabled: true
     type: NodePort
     nodePort: 30300
 
