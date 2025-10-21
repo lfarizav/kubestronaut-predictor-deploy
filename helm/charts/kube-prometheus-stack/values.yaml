@@ -3564,7 +3564,7 @@ prometheus:
   ## Configuration for Prometheus service
   ##
   service:
-    #enabled: true
+    enabled: true
     #annotations: {}
     #labels: {}
     #clusterIP: ""
