@@ -11,14 +11,14 @@ fastapi:
   # This sets the pull policy for images.
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "20251018024325-e7caec2" # {"$imagepolicy": "kubestronaut-predictor:kubestronautfastapi-policy:tag"}
+  tag: "20251021141459-7fc80ec" # {"$imagepolicy": "kubestronaut-predictor:kubestronautfastapi-policy:tag"}
 streamlit:
   repository: lfarizav/kubestronautstreamlit
   replicaCount: 1
   # This sets the pull policy for images.
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "20251018023908-e7caec2" # {"$imagepolicy": "kubestronaut-predictor:kubestronautstreamlit-policy:tag"}
+  tag: "20251021140928-7fc80ec" # {"$imagepolicy": "kubestronaut-predictor:kubestronautstreamlit-policy:tag"}
 servicefastapi:
   # This sets the service type more information can be found here: https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types
   type: ClusterIP
