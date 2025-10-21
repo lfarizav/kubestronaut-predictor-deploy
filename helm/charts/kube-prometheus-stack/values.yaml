@@ -3568,10 +3568,10 @@ prometheus:
     #annotations: {}
     #labels: {}
     #clusterIP: ""
-    #ipDualStack:
-    #  enabled: false
-    #  ipFamilies: ["IPv6", "IPv4"]
-    #  ipFamilyPolicy: "PreferDualStack"
+    ipDualStack:
+      enabled: false
+      ipFamilies: ["IPv6", "IPv4"]
+      ipFamilyPolicy: "PreferDualStack"
     type: NodePort
     nodePort: 30300
 
