@@ -1471,11 +1471,10 @@ grafana:
   ## Passed to grafana subchart and used by servicemonitor below
   ##
   service:
-    #portName: http-web
-    #ipFamilies: []
-    #ipFamilyPolicy: ""
-    type: NodePort
-    nodePort: 30200
+    portName: http-web
+    ipFamilies: []
+    ipFamilyPolicy: ""
+
   serviceMonitor:
     # If true, a ServiceMonitor CRD is created for a prometheus operator
     # https://github.com/prometheus-operator/prometheus-operator
@@ -3564,16 +3563,14 @@ prometheus:
   ## Configuration for Prometheus service
   ##
   service:
-    #annotations: {}
-    #labels: {}
-    #clusterIP: ""
-    #ipDualStack:
-    #  enabled: false
-    #  ipFamilies: ["IPv6", "IPv4"]
-    #  ipFamilyPolicy: "PreferDualStack"
-    #enabled: true
-    type: NodePort
-    nodePort: 30300
+    enabled: true
+    annotations: {}
+    labels: {}
+    clusterIP: ""
+    ipDualStack:
+      enabled: false
+      ipFamilies: ["IPv6", "IPv4"]
+      ipFamilyPolicy: "PreferDualStack"
 
     ## Port for Prometheus Service to listen on
     ##
